@@ -1,0 +1,103 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    outline: none;
+    background-image: linear-gradient(to right, #cc416f,#ca7373, #dce7dc,#AFE0AE,#c3d462);
+}
+.align{
+    display: flex;
+   justify-content: center;
+    
+}
+.calculadora{
+height: 62vh;
+width: 24vw;
+margin-top: 200px;
+padding: 40px;
+background-color: rgb(255, 255, 255 ,0.3);
+backdrop-filter: blur(20px);
+border-radius: 16px;
+border: solid 1px white;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.display{
+    background-color:  rgb(255, 255, 255 ,0.3);
+    color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    border-radius: 10px;
+    border: solid 1px white;
+    backdrop-filter: blur(10px);
+}
+.display h1{
+    margin: 0px 15px;
+    font-size: 50px;
+    overflow-x: scroll;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.buttonIndividual{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(255, 255, 255 ,0.3);
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.buttonIndividual:hover{
+    background-color: rgb(255, 255, 255 ,0.5);
+}
+
+.clearButton{
+    height: 30px;
+    width: 80px;
+    background-color: rgb(255, 255, 255 ,0.3);
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.firstLine{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.secondLine{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.thirdLine{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.fourthLine{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.calculator-display {
+    font-size: 50px; /* Tamanho da fonte */
+    font-weight: normal; /* Peso da fonte (normal, bold, etc.) */
+    color: black; /* Cor do texto */
+    text-align: right; /* Alinhamento do texto à direita */
+    margin: 0; /* Remova as margens */
+    padding: 0; /* Remova o preenchimento */
+    overflow-x: hidden;
+}
