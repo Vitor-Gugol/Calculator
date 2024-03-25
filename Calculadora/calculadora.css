@@ -11,7 +11,7 @@ body{
     
 }
 .calculadora{
-height: 62vh;
+height: 100%;
 width: 24vw;
 margin-top: 200px;
 padding: 40px;
@@ -21,33 +21,10 @@ border-radius: 16px;
 border: solid 1px white;
 display: flex;
 flex-direction: column;
+gap: 20px;
 justify-content: space-around;
 align-items: center;
-}
 
-.display{
-    background-color:  rgb(255, 255, 255 ,0.3);
-    color: black;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 100px;
-    width: 80%;
-    border-radius: 10px;
-    border: solid 1px white;
-    backdrop-filter: blur(10px);
-}
-.display h1{
-    margin: 0px 15px;
-    font-size: 50px;
-    overflow-x: scroll;
-}
-
-.buttons{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
 }
 .buttonIndividual{
     height: 80px;
@@ -62,6 +39,32 @@ align-items: center;
     background-color: rgb(255, 255, 255 ,0.5);
 }
 
+.display{
+    background-color:  rgb(255, 255, 255 ,0.3);
+    color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    border-radius: 10px;
+    border: solid 1px white;
+    backdrop-filter: blur(10px);
+    min-height: 60px;
+}
+.display h1{
+    margin: 0px 15px;
+    font-size: 50px;
+    overflow-x: scroll;
+   min-width: none;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 .clearButton{
     height: 30px;
     width: 80px;
@@ -100,4 +103,24 @@ align-items: center;
     margin: 0; /* Remova as margens */
     padding: 0; /* Remova o preenchimento */
     overflow-x: hidden;
+}
+
+
+@media (max-width: 1400px) {
+    .calculadora{
+        width: 30vw;
+    }
+}
+
+@media(max-width:1100px){
+    .calculadora{
+        width: 50vw;
+    }
+}
+@media(max-width: 600px){
+    .calculadora{
+        width: 100vw;
+        height: 60vh;
+        
+    }
 }
